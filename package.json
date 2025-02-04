@@ -1,0 +1,19 @@
+{
+  "name": "polygon-nft",
+  "version": "1.0.0",
+  "description": "NFT Minting on Polygon Amoy",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy-nft.js --network polygon_amoy",
+    "mint": "npx hardhat run scripts/mint-nft.js --network polygon_amoy"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.10.1",
+    "hardhat": "^2.20.0",
+    "readline-sync": "^1.4.10"
+  }
+}
